@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Music Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Hello bff</h1>
+    
+    <!-- Message Section -->
+    <p>love u always!</p>
+    
+    <!-- Manual Play Button -->
+    <button onclick="playAudio()">Play Song</button>
+    
+    <!-- Audio Player -->
+    <audio id="audioPlayer" controls>
+        <source src=https://drive.google.com/file/d/1j-ZDR-X6gfRTqvp9TZBydoxpfFpEuSb9/view?usp=drivesdk type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        // JavaScript function to play the audio
+        function playAudio() {
+            var audio = document.getElementById('audioPlayer');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
