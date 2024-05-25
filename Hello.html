@@ -5,26 +5,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Hello bff</h1>
+    <h1>Welcome to My Music Website</h1>
     
-    <!-- Message Section -->
-    <p>love u always!</p>
-    
-    <!-- Manual Play Button -->
-    <button onclick="playAudio()">Play Song</button>
-    
-    <!-- Audio Player -->
-    <audio id="audioPlayer" controls>
-        <source src=https://drive.google.com/file/d/1j-ZDR-X6gfRTqvp9TZBydoxpfFpEuSb9/view?usp=drivesdk type="audio/mp3">
+    <!-- Audio Player with Automatic Play -->
+    <audio id="audioPlayer" controls autoplay>
+        <source src="https://github.com/Knieoi/Audio-files.git" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    
-    <script>
-        // JavaScript function to play the audio
-        function playAudio() {
-            var audio = document.getElementById('audioPlayer');
-            audio.play();
-        }
-    </script>
 </body>
 </html>
